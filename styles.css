@@ -40,11 +40,22 @@ a{
   color: #2b9dc0;
 }
 
+html{
+scroll-behavior: smooth;
+}
+
+.productos__carta:hover{
+  transform: translateY(-12px) scale(1.04);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25);
+}
 a:hover{
   text-decoration: underline;
   color: rgb(197, 34, 189);
 }
 
+.respuesta{
+  padding: 10px;
+}
 
 
 
@@ -61,7 +72,7 @@ button {
 }
 .container{
 max-width: 1300px;
-margin: auto;
+margin: ;
 }
 
 header
@@ -69,14 +80,15 @@ header
 
 background-color: var(--color-secundario);
 }
-header .logo{
+.container__logo{
 margin: 0;
 padding: 25px 30px;
 font-weight: bold;
 color: rgb(235, 153, 2);
 font-size: 1.5em;
 }
-header .container{
+
+.container{
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -84,7 +96,7 @@ align-items: center;
 
 }
 
-header .navegador{
+.container__navegador{
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -92,7 +104,7 @@ text-align: center;
 padding-bottom: 25px;
 }
 
-header a{
+.navegador__link{
 padding: 5px 12px;
 text-decoration: none;
 font-weight: bold;
@@ -101,16 +113,19 @@ color: #222;
 
 }
 
-.secciones, .carta{
+.secciones, .productos__carta{
 text-align: center;
-padding: 0px 12px;
-margin-bottom: 10px;
+padding: 20px 12px;
+margin: 25px 0;
 
 }
 
-.secciones .carta{
-border-radius: 15px;
-padding: 20px;
+.productos__carta{
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+  box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 15px;
+  padding: 20px;
+;
 }
 
 .secciones:first-child, .secciones:last-child{
@@ -120,43 +135,46 @@ color: white;
 }
 
 
-.carta:first-child{
+.productos__carta:first-child{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: linear-gradient(
     0deg,
-    rgba(0,0,0,0.5),
-    rgba(0,0,0,0.5)
+    rgba(0,0,0,0.8),
+    rgba(0,0,0,0.8)
   ),url(https://media.istockphoto.com/id/1471844577/es/foto/deliciosa-hamburguesa-doble-con-patatas-fritas-y-verduras-en-tabla-de-cortar-de-madera.jpg?s=612x612&w=0&k=20&c=OV6etFKYOrJeDq8v3-NvGby-pGnnOllYB-pMZJIJgYU=)
 }
 
-.carta:nth-child(2){
+.productos__carta:nth-child(2){
   background-image: linear-gradient(
     0deg,
-    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.1),
     rgba(0,0,0,0.5)
 ),url(https://media.istockphoto.com/id/943449226/es/foto/concepto-promocional-flyer-y-cartel-para-restaurantes-o-pizzer%C3%ADas-plantilla-con-pizza-de.jpg?s=612x612&w=0&k=20&c=SKTA42IP3L-MSEgHIAFx9JBZMJ4V_695Ba1vDTk8hsk=)
 
 }
-.carta:last-child{
+.productos__carta:last-child{
   background-image: linear-gradient(
     0deg,
-    rgba(0,0,0,0.5),
-    rgba(0,0,0,0.5)
+    rgba(0,0,0,0.8),
+    rgba(0,0,0,0.8)
 ),url(https://media.istockphoto.com/id/1161700170/es/foto/completo-italiano-chileno-s%C3%A1ndwiches-de-perro-caliente-con-tomate-aguacate-y-mayonesa-en-tabla.jpg?s=612x612&w=0&k=20&c=woxfh3QEBLXQfQkb-GU_sQ0jGjoFxJymE8HHflQuxxA=)
 }
-
-html{
-scroll-behavior: smooth;
-}
-
 
 .secciones:nth-child(2){
 margin: 15px 0px;
 font-weight: bold;
 }
 
+.secciones__detalles{
+  margin: 15px;
+}
+
+em{
+  margin: 10px;
+  padding: 5px;
+}
 
 
 @media (min-width: 720px){
@@ -165,6 +183,3 @@ font-weight: bold;
   }
   
 }
-
-
-
