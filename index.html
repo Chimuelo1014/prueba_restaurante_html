@@ -9,12 +9,12 @@
 <body>
   <header>
     <div class="container">
-      <p class="logo">Restaurante</p>
-      <nav class="navegador">
+      <p class="container__logo">Restaurante</p>
+      <nav class="container__navegador">
         
-        <a class="navegador__link" href="#">Menu</a>
-        <a class="navegador__link" href="#">Sobre Nosotros</a>
-        <a class="navegadro__link" href="#">Contacto</a>
+        <a class="navegador__link" href="#menu">Menú</a>
+        <a class="navegador__link" href="#sobrenosotros">Sobre Nosotros</a>
+        <a class="navegador__link" href="#contacto">Contacto</a>
       </nav>
     </div>
     <h1></h1>
@@ -23,24 +23,24 @@
     <section class="secciones">
       <div class="container">
 
-        <h2>Menu</h2>
-        <div class="programas">
-          <div class="carta">
+        <h2 id="menu">Menú</h2>
+        <div class="productos">
+          <div class="productos__carta">
             <h3>Hamburguesa</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, ad ratione ut cum eveniet consectetur a, qui animi repellendus atque nam ex laboriosam rerum quas assumenda nemo maiores facere consequatur!</p>
-            <button>boton1</button>
+            <button>$20.000</button>
           </div>
 
-          <div class="carta">
+          <div class="productos__carta">
             <h3>Pizza</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, ad ratione ut cum eveniet consectetur a, qui animi repellendus atque nam ex laboriosam rerum quas assumenda nemo maiores facere consequatur!</p>
-            <button>boton2</button>
+            <button>$40.000</button>
           </div>
 
-          <div class="carta">
+          <div class="productos__carta">
             <h3>Perro</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, ad ratione ut cum eveniet consectetur a, qui animi repellendus atque nam ex laboriosam rerum quas assumenda nemo maiores facere consequatur!</p>
-            <button>boton3</button>
+            <button>$15.000</button>
             
           </div>
         </div>
@@ -48,20 +48,40 @@
 
     </section>
     <section class="secciones">
-      <h2>Sobre Nosotros</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae suscipit ratione doloremque officiis quas placeat hic, explicabo esse odio veniam dolore et molestias ad voluptas omnis nulla quaerat ut magnam.</p>
+      <h2 id="sobrenosotros">Sobre Nosotros</h2>
+      <p> Creemos que la buena comida une a las personas. Por eso, desde el primer día, nos propusimos ofrecer lo mejor en pizzas, hamburguesas y hot dogs, preparados con ingredientes frescos, sabores auténticos y ese toque casero que se nota desde el primer bocado.Somos un lugar donde puedes venir con amigos, en familia o solo a disfrutar de una comida deliciosa, sin complicaciones. Ya sea que tengas antojo de una hamburguesa jugosa, una pizza con queso derretido o un hot dog lleno de sabor, aquí siempre te esperamos con las manos llenas de sabor y el corazón contento.</p>
+      <details class="secciones__detalles">
+        <summary><h2>Nuestra historia</h2></summary>
+      <p>Todo comenzó con una idea sencilla: llevar comida rica, honesta y con mucho sabor a nuestro barrio. En el 2001, abrimos las puertas con una receta familiar de pizza y una parrilla lista para preparar las mejores hamburguesas y hot dogs.Lo que empezó como un pequeño local con muchas ganas, se fue convirtiendo en el lugar favorito de muchos para compartir una comida sin pretensiones, pero llena de sabor. Hemos crecido, hemos aprendido y sobre todo, hemos disfrutado cada momento con nuestros clientes, que ya sentimos como parte de la familia.
+
+      Hoy seguimos con la misma pasión de siempre: servir comida deliciosa, con buen trato y ese ambiente acogedor que nos caracteriza.</p>
+    </details>
     </section>
+    
 
     <section class="secciones">
-      <h2>contacto</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis minima, accusantium beatae repudiandae perspiciatis eveniet deleniti velit cum ipsa iste esse, unde eligendi temporibus! Quasi pariatur provident dolorem quisquam alias.</p>
+      <h2 id="contacto">Contacto</h2>
+      <details class="secciones__detalles">
+        <summary>Telefono</summary>
+        <p class="respuesta">☎️+57 301 890 8978</p>
+      </details>
+      <details class="secciones__detalles">
+        <summary>Redes Sociales</summary>
+        <p class="respuesta"> 
+        @restaurante_1122</p>
+      </details>
+      <details class="secciones__detalles">
+        <summary>Dirección</summary>
+        <p class="respuesta">📌 Carrera 27 A Sur 30-58 </p>
+      </details>
+
     </section>
 
 
   </main>
 
   <footer>
-    <em>&copy;copyright rakad</em>
+    <em>&copy;Copyright Restaurante_1122</em>
   </footer>
 </body>
 </html>
