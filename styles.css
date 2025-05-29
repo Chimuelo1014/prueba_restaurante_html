@@ -72,7 +72,7 @@ button {
 }
 .container{
 max-width: 1300px;
-margin: ;
+
 }
 
 header
@@ -178,8 +178,64 @@ em{
 
 
 @media (min-width: 720px){
+  
+  header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    
+  }
   header .container{
     flex-direction: row;
+    justify-content: space-between;
   }
   
+  header .container__navegador, header .container__logo{
+    flex-direction: row;
+    padding-top: 24px;
+    padding-bottom: 0;
+    padding-right: 40px;
+    font-size: 20px;
+  }
+  
+  .productos{
+    display: flex;
+  }
+  .secciones{
+    margin-top: 80px;
+  }
+
+  .secciones__container{
+    display: flex;
+    max-width: 100%;
+    justify-content:center;
+    
+  }
+
+  .productos__carta{
+    margin: 10px 15px;
+
+
+  }
+  .container__image{
+    background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+
+    ), url("https://blog.laddition.com/sites/default/files/2020-10/estrategias-fidelizacion-clientes.png");
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    width: 400px;
+    margin: 50px 10px;
+    border-radius: 20px;
+    
+  }
+  .container__text{
+    width: 50%;
+    text-align: initial;
+    margin: 50px;
+  }
 }
